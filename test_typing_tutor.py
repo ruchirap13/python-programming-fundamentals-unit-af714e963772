@@ -71,7 +71,6 @@ class RunTutorTests(unittest.TestCase):
         self.assertEqual(records[1]["typed"], "practise makes perfect")
         self.assertEqual(records[1]["time"], 4.0)
         #"practice" vs "practise" : 7 of 8 letters, total 20 letters -> 19/20
-        # self.assertEqual(records[1]["accuracy"], 95.0)
         text = output.getvalue()
         self.assertIn("Correct characters:", text)
         self.assertIn("Accuracy: 90.0%", text)
